@@ -44,6 +44,8 @@
 		4FD481FC2C41C03C00FAD930 /* VincarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VincarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FD482002C41C03C00FAD930 /* VincarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VincarUITests.swift; sourceTree = "<group>"; };
 		4FD482022C41C03C00FAD930 /* VincarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VincarUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4FD482102C43255700FAD930 /* Domain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Domain; sourceTree = "<group>"; };
+		4FD482112C43256000FAD930 /* Storage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Storage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		4FD481D92C41C03B00FAD930 = {
 			isa = PBXGroup;
 			children = (
+				4FD4820F2C43253800FAD930 /* Sources */,
 				4FD481E42C41C03B00FAD930 /* Vincar */,
 				4FD481F52C41C03C00FAD930 /* VincarTests */,
 				4FD481FF2C41C03C00FAD930 /* VincarUITests */,
@@ -125,6 +128,15 @@
 				4FD482022C41C03C00FAD930 /* VincarUITestsLaunchTests.swift */,
 			);
 			path = VincarUITests;
+			sourceTree = "<group>";
+		};
+		4FD4820F2C43253800FAD930 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4FD482112C43256000FAD930 /* Storage */,
+				4FD482102C43255700FAD930 /* Domain */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
