@@ -14,6 +14,12 @@
 		4FD481F72C41C03C00FAD930 /* VincarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD481F62C41C03C00FAD930 /* VincarTests.swift */; };
 		4FD482012C41C03C00FAD930 /* VincarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD482002C41C03C00FAD930 /* VincarUITests.swift */; };
 		4FD482032C41C03C00FAD930 /* VincarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD482022C41C03C00FAD930 /* VincarUITestsLaunchTests.swift */; };
+		4FD4AE8E2C44809300FAD930 /* ModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD4AE8D2C44809300FAD930 /* ModelsTests.swift */; };
+		4FD4AE8F2C44825700FAD930 /* BaseExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD4A44A2C446E5F00FAD930 /* BaseExercise.swift */; };
+		4FD4AE902C44825A00FAD930 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD4A44B2C446E5F00FAD930 /* Utility.swift */; };
+		4FD4AE912C44825D00FAD930 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD4A44C2C446E5F00FAD930 /* Workout.swift */; };
+		4FD4AE922C44826100FAD930 /* exercises.json in Resources */ = {isa = PBXBuildFile; fileRef = 4FD4AE8B2C446E8A00FAD930 /* exercises.json */; };
+		4FD4AE942C44C4A400FAD930 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FD4AE932C44C4A400FAD930 /* Exercise.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +52,12 @@
 		4FD482022C41C03C00FAD930 /* VincarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VincarUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4FD482102C43255700FAD930 /* Domain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Domain; sourceTree = "<group>"; };
 		4FD482112C43256000FAD930 /* Storage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Storage; sourceTree = "<group>"; };
+		4FD4A44A2C446E5F00FAD930 /* BaseExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseExercise.swift; sourceTree = "<group>"; };
+		4FD4A44B2C446E5F00FAD930 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		4FD4A44C2C446E5F00FAD930 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		4FD4AE8B2C446E8A00FAD930 /* exercises.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = exercises.json; sourceTree = "<group>"; };
+		4FD4AE8D2C44809300FAD930 /* ModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelsTests.swift; sourceTree = "<group>"; };
+		4FD4AE932C44C4A400FAD930 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,7 @@
 		4FD481E42C41C03B00FAD930 /* Vincar */ = {
 			isa = PBXGroup;
 			children = (
+				4FD4A44D2C446E5F00FAD930 /* Models */,
 				4FD481E52C41C03B00FAD930 /* VincarApp.swift */,
 				4FD481E72C41C03B00FAD930 /* ContentView.swift */,
 				4FD481E92C41C03C00FAD930 /* Assets.xcassets */,
@@ -117,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				4FD481F62C41C03C00FAD930 /* VincarTests.swift */,
+				4FD4AE8D2C44809300FAD930 /* ModelsTests.swift */,
 			);
 			path = VincarTests;
 			sourceTree = "<group>";
@@ -137,6 +151,18 @@
 				4FD482102C43255700FAD930 /* Domain */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		4FD4A44D2C446E5F00FAD930 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4FD4AE8B2C446E8A00FAD930 /* exercises.json */,
+				4FD4A44A2C446E5F00FAD930 /* BaseExercise.swift */,
+				4FD4A44B2C446E5F00FAD930 /* Utility.swift */,
+				4FD4A44C2C446E5F00FAD930 /* Workout.swift */,
+				4FD4AE932C44C4A400FAD930 /* Exercise.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +271,7 @@
 			files = (
 				4FD481ED2C41C03C00FAD930 /* Preview Assets.xcassets in Resources */,
 				4FD481EA2C41C03C00FAD930 /* Assets.xcassets in Resources */,
+				4FD4AE922C44826100FAD930 /* exercises.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,8 +296,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FD4AE902C44825A00FAD930 /* Utility.swift in Sources */,
 				4FD481E82C41C03B00FAD930 /* ContentView.swift in Sources */,
 				4FD481E62C41C03B00FAD930 /* VincarApp.swift in Sources */,
+				4FD4AE912C44825D00FAD930 /* Workout.swift in Sources */,
+				4FD4AE8F2C44825700FAD930 /* BaseExercise.swift in Sources */,
+				4FD4AE942C44C4A400FAD930 /* Exercise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FD481F72C41C03C00FAD930 /* VincarTests.swift in Sources */,
+				4FD4AE8E2C44809300FAD930 /* ModelsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
