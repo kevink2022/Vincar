@@ -1,62 +1,24 @@
 //
-//  Exercise.swift
+//  WorkoutExercise.swift
 //  Vincar
 //
-//  Created by Kevin Kelly on 7/14/24.
+//  Created by Kevin Kelly on 7/15/24.
 //
 
 import Foundation
 
-public struct Exercise: Identifiable, Equatable, Hashable, Codable {
-    public var id: String
-    public var name: String
-    public var force: String?
-    public var level: String
-    public var mechanic: String?
-    public var equipment: String?
-    public var primaryMuscles: [String]
-    public var secondaryMuscles: [String]
-    public var instructions: [String]
-    public var category: String
-    public var images: [ImageSource]
+/// A `WorkoutExercise` is an exercise performed during a workout, or saved in a routine. Therefore, it contians set and rep data, along with substitutions.
+struct Exercise {
+    var exercise: MultiExercise
     
-    init(
-        id: String
-        , name: String
-        , force: String?
-        , level: String
-        , mechanic: String?
-        , equipment: String?
-        , primaryMuscles: [String]
-        , secondaryMuscles: [String]
-        , instructions: [String]
-        , category: String
-        , images: [ImageSource]
-    ) {
-        self.id = id
-        self.name = name
-        self.force = force
-        self.level = level
-        self.mechanic = mechanic
-        self.equipment = equipment
-        self.primaryMuscles = primaryMuscles
-        self.secondaryMuscles = secondaryMuscles
-        self.instructions = instructions
-        self.category = category
-        self.images = images
-    }
+    // Subs are really a workout thing.
+    var subsitutions: [MultiExercise]
     
-    enum CodingKeys: String, CodingKey {
-        case id
-        case name
-        case force
-        case level
-        case mechanic
-        case equipment
-        case primaryMuscles
-        case secondaryMuscles
-        case instructions
-        case category
-        case images
-    }
+    var sets: [ExerciseSet]
+}
+
+protocol ExerciseSet {
+    // somthing to describe values
+    
+    // completeion station
 }
